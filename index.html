@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+    <label id="greet"></label></div>
+<script>
+    document.addEventListener("DOMContentLoaded",()=>{
+    const greet=document.getElementById("greet");
+    let body=document.body;
+    const date=new Date();
+    const hrs=date.getHours();
+    let greeting;
+    if(hrs<12){
+        greeting='Good Morning'
+        body.style.backgroundImage="url(../public/pexels-photo-1076885.jpeg)"
+
+    }else if(hrs>=12 && hrs<17){
+        greeting='Good Afternoon'
+        body.style.backgroundImage="url(../public/photo-2.jpeg)"
+    }else if(hrs >= 17 && hrs<=24) {
+        greeting='Good Evening'
+        body.style.backgroundImage="url(../public/pexels-photo-3.jpeg)"
+
+    }
+    greet.innerHTML=`<b>${greeting},  Developer! 😊</b>`;
+    })
+    </script>
+</body>
+</html>

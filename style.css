@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+    height:100vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#greet{
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-shadow: 0 2px rgb(246, 243, 243), 2px 0 rgb(250, 249, 249), 0 2px rgb(230, 227, 227),2px 0 rgb(250, 249, 249);
+    font-size: 40px;
+    
+}
